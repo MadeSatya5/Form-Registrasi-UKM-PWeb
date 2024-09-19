@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Unit Kegiatan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "PT Serif", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body{
+            padding: 40px 10px;
+        }
+        input,select,textarea{
+            margin-bottom: 15px;
+        }
+        label{
+            margin-right: 20px;
+        }
+        h1{
+            text-align: center;
+            font-weight: 700;
+        }
+        form{
+            max-width: 600px;
+            margin: auto;
+            padding: 5px 25px 20px 20px;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            border-radius: 15px;
+        }
+        input[type="text"]{
+            width: 100%;
+            height: 20px;
+        }
+        button{
+            display: block; 
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #0649a8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Registrasi UKM ITS</h1>
+        <label for="firstname">Nama Awal: </label><br>
+        <input type="text" id="firstname" size="20">
+        <br>
+        <label for="middlename">Nama Tengah: </label><br>
+        <input type="text" id="middlename" size="20">
+        <br>
+        <label for="lastname">Nama Akhir: </label><br>
+        <input type="text" id="lastname" size="20">
+        <br>
+        <label for="ukm">UKM: </label><br>
+        <select name="course" id="">
+            <option value="Musik">Musik</option>
+            <option value="Padsu">Paduan Suara</option>
+            <option value="Silat">PSHT</option>
+            <option value="Basket">Basket</option>
+            <option value="bola">Sepak Bola</option>
+            <option value="bola">Tari</option>
+            <option value="bola">Panah</option>
+        </select>
+        <br>
+        <label for="Gender">Jenis Kelamin:</label><br>
+        <input type="radio" name="opsi" value="Male">Laki-Laki<br>
+        <input type="radio" name="opsi" value="Female">Perempuan<br>
+        <label for="phone">No HP:</label><br>
+        <input type="text" size="3" value="+62">
+        <br>
+        <label for="address">Alamat: </label><br>
+        <textarea name="address" id="address" rows="5" cols="70" ></textarea><br>
+        <label for="email">Email: </label><br>
+        <input type="text" id="email"><br>
+        <label for="password">Password: </label><br>
+        <input type="password" id="password"><br>
+        <label for="rt-password">Ketik Ulang Password: </label><br>
+        <input type="password" id="rt-password"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
